@@ -13,11 +13,13 @@ user_country = input("What country are you from? \n")
 user_state = input("What state are you from? \n")
 user_city = input("What city are you from? \n")
 
-user_residence = "{country} {state} {city}".format(country = user_country.title(), state = user_state.title(), \
-                                                   city = user_city.title())
+user_residence = "You live in {city}, {state} in the country of {country}".format(country = user_country.title(), state = user_state.title(), city = user_city.title())
+
 print(user_residence);
 
 # Ask how many and what are the colors in their country flag
+num_colors = input("How many colors are in your country flag? \n")
+
 
 # if want to use a loop
 # get number of flag colors
@@ -34,5 +36,5 @@ print(color_list);
 print(flag_colors);
 print("Your name is ", user_name)
 
+print("Your name is", user_name,",", user_residence,". Your country flag colors are:", color_list[0],",",color_list[1], "and", color_list[2])
 
-print("Your name is ", user_name,", and you are from ", user_residence,".")
