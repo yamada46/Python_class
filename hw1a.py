@@ -35,4 +35,4 @@ print(flag_colors);
 print("Your name is ", user_name)
 
 
-#print("Your name is ", user_name", and you are from ", user_residence".");
+print("Your name is ", user_name,", and you are from ", user_residence,".")
