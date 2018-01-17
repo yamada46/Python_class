@@ -1,0 +1,24 @@
+# Get the user's name
+userName = input("What is your name? \n")
+
+
+# Print out the user's name
+print("Your name is ",userName)
+
+# Get the user's favorite color
+print("What is your favorite color")
+
+# Store that color as a variable
+user_fav_color = input("What is your favorite color?" \n)
+
+print("Your favorite color is", user_fav_color
+# Store my name
+
+
+# Store my favorite colar
+my_color = "maroon"
+
+# Print my color
+
+
+
