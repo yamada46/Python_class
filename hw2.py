@@ -106,6 +106,8 @@ print("Dealer Prep Fee: $", prep_fee,"\n")
 
 print("Total price = $", total_sales,". For any questions, your reference number is: ", purchaserID,sep="")
 
+input("\n\nPress the enter key to exit.")
+
 '''
 I could not make the float numbers show 2 decimal places. And I tried to make a CalculateTaxes function, but I deleted it because \
 I couldn't get it to work.
