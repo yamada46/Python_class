@@ -5,26 +5,6 @@ Python3 code
 
 '''
 
-'''
-Hello Christopher Robin! 
-
-Thank you for your purchase of a Nissan Versa. Following is a break down of your total price: 
-
-Sales Price: $2000.00
-
-Tax: $50.00
-
-Licensing Fee: $50.00
-
-Dealer Prep Fee: $50.00
-
-Total Price: $2150.00
-
-You have been assigned an ID number of BIN_503. Please refer to this ID number if you have any questions 
-
-
-'''
-
 # Get the purchaser name
 purchaser_name = input("What is your first, middle and last name? Please separate your names with commas. \n")
 #print(purchaser_name)
