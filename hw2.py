@@ -21,13 +21,18 @@ Assign the car a unique ID composed of the last four letters of the purchaser's 
 Print out the information to the screen, with the same line breaks as shown in the example below
 Make sure your script runs and submit it to canvas as a .py file. 
 '''
-'''
+
 # Get the purchaser name
 purchaser_name = input("What is your first, middle and last name? Please separate your names with commas. \n")
 print(purchaser_name)
 
 fullname = purchaser_name.split(",")
 print(fullname[2])
+last_name = fullname[2]
+last_name_len = len(last_name)
+print(last_name_len)
+last_four = last_name[last_name_len - 4:last_name_len]
+print(last_four)
 
 # Get purchaser address
 purchaser_address = input("Enter your address \n")
@@ -43,39 +48,39 @@ print(phone_number[2])
 # Enter the type of car purchased
 type_of_car = "Subaru CrossTrek"
 print(type_of_car)
-'''
+
 # Enter price of car purchase
 base_price = input("Enter Base Price =  \n$ " )
 base_decimal = float(base_price)
 print(base_decimal)
 
 
-# Calculate sales tax
-sales_tax_rate = input("Enter Seattle car sales tax rate? \n")
+# Enter sales tax
+sales_tax_rate = input("Enter Seattle car sales tax rate: \n")
 num_places = len(sales_tax_rate)
-float(num_places)
+print(num_places)
 
 if "%" in sales_tax_rate:
-    num_places = num_places - 1
-    sales_tax_rate = sales_tax_rate[0:num_places]
-    sales_tax = float(sales_tax_rate)/100
-    total_sales_tax = base_decimal * sales_tax
+    num_places = int(num_places) - 1
+    print(num_places)
+    percent = sales_tax_rate[0:3]
+    print(percent)
+    sales_tax_decimal = float(percent) / 100
+    print(sales_tax_decimal)
 
+else:
+    sales_tax_rate = float(sales_tax_rate) / 100
+    print(sales_tax_rate)
+
+total_sales_tax = base_decimal * sales_tax_decimal
 print(total_sales_tax)
-
-'''
-else
-    sales_tax_rate = float(sales_tax_rate)
-    sales_tax = sales_tax_rate / 100
-    total_sales_tax2 = base_decimal * sales_tax
-    print(total_sales_tax2)
-
-
 
 # Enter the dealer's prep fee
 prep_fee = input("Enter the dealer's preparation fee: \n$ ")
+print(prep_fee)
 
-purchaserID = ((s% fullname[2]) + "_" + (r% phone_number[2])
-'''
+purchaserID = last_four + "_" + phone_number[2]
+print(purchaserID)
+
 
 
