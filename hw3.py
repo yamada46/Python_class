@@ -1,9 +1,5 @@
 '''
-hw3.py
-
-
-Create a script called hw3.py
-Ask the user to enter a starting and ending number
+hw3.py script
 
 Ask the user to enter a starting and ending number
 The user must not enter a starting number less than 1
