@@ -31,9 +31,9 @@ while counter < num_guess:
     else:
         print("That letter is not in the animal name")
         counter+= 1
-
+    print("You have ", num_guess - counter, "left!")
 print("These are the letters you have guessed correctly ", guessed_letter)
-print("The number of letter in the secret animal name is ",len(animal))
+print("The number of letters in the secret animal name is ",len(animal))
 guess_animal = input("Guess what the animal is: ")
 if guess_animal == animal:
     print("Congrat! You've guessed correctly!")
