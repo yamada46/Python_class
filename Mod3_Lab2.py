@@ -10,12 +10,13 @@ print out the matches
 # Make a list of animal
 animal = "raccoon"
 unique = set(animal)
-print(unique)
+
+#print(unique)
 
 # store guesses
 guessed_letter = set()
 num_guess = len(unique)
-print(num_guess)
+#print(num_guess)
 print("Figure out the secret animal. Guess some letters in it's name! You get ", num_guess," tries ")
 
 # get user input
@@ -36,6 +37,7 @@ print("These are the letters you have guessed correctly ", guessed_letter)
 print("The number of letters in the secret animal name is ",len(animal))
 guess_animal = input("Guess what the animal is: ")
 if guess_animal == animal:
-    print("Congrat! You've guessed correctly!")
+    print("Congrats! You've guessed correctly!\n")
+    print("You have won a frisbee!\n")
 else:
-    print("Sorry you lose!")
+    print("Sorry you lose!\n")
