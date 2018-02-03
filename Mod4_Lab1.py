@@ -29,8 +29,10 @@ s2_num = (len(set_s2))
 print("\nThere are {} unique words in sentence s1, and {} uniques words in sentence s2. ".format(str(s1_num), str(s2_num)))
 
 # Where the words that appear in both sentences
-print("\nUnique words that appear in both sentences. ")
-print("set_s1.intersection(set_s2)")
+s1_s2_common = set_s1.intersection(set_s2)
+len(s1_s2_common)
+print("\nThere are {} unique words that appear in both sentences. ".format(len(s1_s2_common)))
+print(s1_s2_common)
 
 
 # For an extra challenge, can you figure out how to remove all the punctuation from the sentences before turning them into a set? See here (Links to an external site.)Links to an external site. for some help.

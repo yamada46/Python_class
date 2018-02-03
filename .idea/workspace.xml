@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0918421b-b24e-4865-8504-a045632eae4d" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Mod4_Lab1.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Mod4_Lab2.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/hw4.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Mod3_Lab2.py" afterPath="$PROJECT_DIR$/Mod3_Lab2.py" />
+      <change beforePath="$PROJECT_DIR$/Mod4_Lab1.py" afterPath="$PROJECT_DIR$/Mod4_Lab1.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -60,11 +59,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Mod4_Lab1.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Mod4_Lab1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Mod4_Lab1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+            <state relative-caret-position="1">
+              <caret line="5" column="43" lean-forward="false" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hw4.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hw4.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="467">
+              <caret line="39" column="23" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="39" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -110,6 +119,7 @@
         <option value="$PROJECT_DIR$/Mod3_Lab2.py" />
         <option value="$PROJECT_DIR$/Mod4_Lab2.py" />
         <option value="$PROJECT_DIR$/Mod4_Lab1.py" />
+        <option value="$PROJECT_DIR$/hw4.py" />
       </list>
     </option>
   </component>
@@ -399,7 +409,14 @@
       <option name="project" value="LOCAL" />
       <updated>1517420936082</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Mod4_Lab1 done except extra credit">
+      <created>1517605499540</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1517605499541</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TodoView">
@@ -413,12 +430,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2853688" sideWeight="0.15450644" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.49427754" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33857316" sideWeight="0.47997138" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33857316" sideWeight="0.47997138" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2853688" sideWeight="0.84549356" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.080829754" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -479,7 +495,8 @@
     <MESSAGE value=" hw2.py deleted assignment comments" />
     <MESSAGE value="Mod3_Lab2.py not totally great for all circumstances" />
     <MESSAGE value="hw3.py is done!" />
-    <option name="LAST_COMMIT_MESSAGE" value="hw3.py is done!" />
+    <MESSAGE value="Mod4_Lab1 done except extra credit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mod4_Lab1 done except extra credit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -640,14 +657,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hw3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="40" column="23" lean-forward="false" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -656,10 +665,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hw3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="40" column="23" lean-forward="false" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Mod4_Lab1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        <state relative-caret-position="1">
+          <caret line="5" column="43" lean-forward="false" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="39" column="23" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="39" selection-end-column="23" />
           <folding />
         </state>
       </provider>
