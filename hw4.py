@@ -39,6 +39,9 @@ hair_people_dict = dict(hair_tuple_people)
 # Print out dictionary
 print(hair_people_dict)
 
+for key, val in hair_people_dict.items():
+    print(key, val)
+
 
 "Please input an user to find out their age: "
 "Alice"
