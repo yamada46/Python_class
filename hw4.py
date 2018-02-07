@@ -26,26 +26,39 @@ Your program should print out the response, as follows:
 
 
 '''
+
 # Create two lists
-hair_colors = ["black", "light brown", "med brown", "dark brown", "light blond", "blond" , "auburn", "red", "gray", "white"]
-people = ["Sheree", "Henry", "Jim", "Kim", "Verene", "Lynda", "Jen", "Terry", "Iky", "Gabi"]
-print(hair_colors, people)
+people = ["Sheree", "Henry", "Helen", "Kim", "Verene", "Lynda", "Jen", "Terry", "Iky", "Gabi"]
+hair_colors = ["black", "light brown, green", "med brown, blue, purple", "dark brown", "light blond, pink", "blond" , "auburn", "red", "gray, white, black", "white"]
+# print(people, hair_colors)
 
-# Combine the two lists into a dictionary
-hair_tuple_people = list(zip(hair_colors, people))
+# Or combine the two list with the key being the people's name instead of hair color
+people_tuple_hair = list(zip(people, hair_colors))
 
-hair_people_dict = dict(hair_tuple_people)
+people_hair_dict = dict(people_tuple_hair)
+# people_hair_dict
 
-# Print out dictionary
-print(hair_people_dict)
+# Get some names guesses from the user
+print("\nTry to guess a name on the list to see their hair color(s)! \n")
 
-for key, val in hair_people_dict.items():
-    print(key, val)
+count = 0
+wrong_guess = []
+while count < 5:
+    print("You have", 5 - count, "guesses. \n")
+    guess = input("Guess a name in the list: \n")
+    if guess in people_hair_dict:
+        print("\nYes! {} is a name in the list and has hair color of {}. \n".format(guess, people_hair_dict[guess]))
+#        print(guess)
+    else:
+        print("\n{} is not one of the names in the list. Guess again: \n".format(guess))
+        wrong_guess.append(guess)
+    count += 1
 
-
-"Please input an user to find out their age: "
-"Alice"
-"Alice is 57!"
-
-"Tabitha"
-"There is nobody here named Tabitha, please try again: "
+if count == 5:
+    print("You have one guess left: \n")
+print("These are all the wrong guesses!\n\n", list(wrong_guess))
+'''     
+    else:
+        print(guess, " is not in the list. Guess another name: \n)"
+#        count += 1
+'''
