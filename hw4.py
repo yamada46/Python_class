@@ -13,7 +13,7 @@ Your program should print out the response.
 '''
 
 # create two lists
-people = ["Sheree", "Henry", "Helen", "Kim", "Verene", "Lynda", "Jen", "Terry", "Iky", "Gabi"]
+people = ["Sheree", "Henry", "Helen", "Kim", "Verene", "Lynda", "Jen", "Terry", "Ayako", "Gabi"]
 hair_colors = ["black", "light brown, green", "med brown, blue, purple", "dark brown", "light blond, pink", "blond" , "auburn", "red", "gray, white, black", "white"]
 # print(people, hair_colors)
 
@@ -23,30 +23,37 @@ people_tuple_hair = list(zip(people, hair_colors))
 people_hair_dict = dict(people_tuple_hair)
 # people_hair_dict
 
-# Get some names guesses from the user
+# get some names guesses from the user
 print("\nTry to guess a name on the list to see their hair color(s)! \n")
 
+# loop through guesses and save the list of correct and wrong guesses
 count = 1
+correct_guess = []
 wrong_guess = []
 while count < 5:
-    print("You have", 6 - count, "guesses. \n")
+    print("You have", 6 - count, "guesses.")
     guess = input("Guess a name in the list: \n")
     if guess in people_hair_dict:
         print("Yes! {} is a name in the list and has hair color of {}. \n".format(guess, people_hair_dict[guess]))
-#        print(guess)
+        correct_guess.append(guess)
     else:
         print("{} is not one of the names in the list. Guess again: \n".format(guess))
         wrong_guess.append(guess)
     count += 1
 
-guess = input("You have one guess left. Guess a final time: \n")
+# Last guess
+guess = input("You have {} guess left. One more try: \n".format(count - 4))
 if guess in people_hair_dict:
     print("Yes! {} is a name in the list and has hair color of {}. \n".format(guess, people_hair_dict[guess]))
-#        print(guess)
+    correct_guess.append(guess)
 else:
-    print("{} is not one of the names in the list. Guess again: \n".format(guess))
+    print("{} is not one of the names in the list. \n".format(guess))
     wrong_guess.append(guess)
 
-print("These are all the wrong guesses!\n", list(wrong_guess))
+# print out the correct guesses
+print("These are all the correct guesses!\n", list(correct_guess))
+
+# print out the missed guesses
+print("\nThese are all the wrong guesses!\n", list(wrong_guess))
 
 print()
