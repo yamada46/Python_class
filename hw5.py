@@ -97,24 +97,26 @@ sortedDict =sorted(word_dict.items(), key=operator.itemgetter(1,0) , reverse=Tru
 
 # get the word that is used the most and the least
 max_word = max(word_dict, key=word_dict.get)    # gets the word with the maximum times used
-min_word_count = min(word_dict, key=word_dict.get)    # gets the value that is lowest which would be 1
+min_word_count = min(word_dict.values())    # gets the value that is lowest which would be 1
 #print(max_word)
 #print(min_word_count)      # I thought this should say 1 but it says 'title:'
 
 
-'''
-#couldn't get this to work
 # get the list of words used once
-
 words_once = []
-for word in word_dict.items():
-    if word == 1:
-        words_once = words_once.append(word)
-print(words_once)
-'''
+for word, times in word_dict.items():
+    if times == min_word_count:
+        words_once.append(word)
+#print(words_once)
+
+# get the number of words used once
+num_words_once = len(words_once)
+#print(num_words_once)
+
 
 # print out a sentence giving the word used the most and the list of miminum words
-print("The word used the most in this text is '{}' which is used {} times.".format(max_word, word_dict["the"]))
+print("The most repeated word in this text is '{}' which is used {} times.".format(max_word, word_dict["the"]))
+print("There are {} words with a minimum count of 1 \n".format(num_words_once))
 
 #print("The list of words only used once is {}.".format(min_words)
 
@@ -122,7 +124,8 @@ print("The word used the most in this text is '{}' which is used {} times.".form
 unique_percent = float(num_unique/num_words) * 100
 #print(unique_percent)
 
-
 # Print a sentence of the percentage of words that are unique in the book (hint: use :.1f in your format)
 print("The percentage of words that are unique in this text is {:.1f}% \n".format(unique_percent))
+
+
 
