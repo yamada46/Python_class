@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0918421b-b24e-4865-8504-a045632eae4d" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Mod5_Lab1.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Mod5_Lab2.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/hw5.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -485,7 +482,14 @@
       <option name="project" value="LOCAL" />
       <updated>1518021304439</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="hw5 - couldn't get the words used once list">
+      <created>1518661903870</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1518661903870</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TodoView">
@@ -549,7 +553,8 @@
     <MESSAGE value="hw4 loop done" />
     <MESSAGE value="hw4 almost done" />
     <MESSAGE value="hw4 - done!" />
-    <option name="LAST_COMMIT_MESSAGE" value="hw4 - done!" />
+    <MESSAGE value="hw5 - couldn't get the words used once list" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw5 - couldn't get the words used once list" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
