@@ -1,13 +1,6 @@
 #! /Users/gailyamada/PycharmProjects/ITFDN2018/venv/bin/python3
 '''
-
-From the previous lab:
-
-Browse to a free copy of "The Land That Time Forgot" (Links to an external site.)Links to an external site. (or a different book)
-Right-click on your browser
-Select "save as"
-Save as a .txt file
-Read in the file and store in a list
+Hw5
 Convert the list of book lines into a list of the words (hint: use a for loop and list.extend)
 For this homework:
 
@@ -19,6 +12,7 @@ Store all of the words that have the minimum frequency in a list (hint: use a fo
 Print a sentence of the minimum frequency and the number of words with that frequency
 Print a sentence of the percentage of words that are unique in the book (hint: use :.1f in your format)
 '''
+
 # from Mod5_Lab2
 # import a sort operator
 import operator
