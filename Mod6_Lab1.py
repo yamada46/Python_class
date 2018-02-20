@@ -1,19 +1,86 @@
-#! /Users/gailyamada/PycharmProjects/ITFDN2018/venv/bin/python3
 '''
-Hw5
-Convert the list of book lines into a list of the words (hint: use a for loop and list.extend)
-For this homework:
+Mod6Lab1.py
 
-Print a sentence using format with the total number of words and the unique number of words (hint: use a set)
-Calculate the word (Links to an external site.)Links to an external site. frequency (Links to an external site.)Links to an external site. using the word list, the word set, and a for loop with list.count (Links to an external site.)Links to an external site. and store it in a dictionary (hint: don't forget to use float)
-Calculate the word with the maximum frequency (hint: use max (Links to an external site.)Links to an external site.)
-Get the minimum frequency (hint: use values (Links to an external site.)Links to an external site.)
-Store all of the words that have the minimum frequency in a list (hint: use a for loop and items (Links to an external site.)Links to an external site.)
-Print a sentence of the minimum frequency and the number of words with that frequency
-Print a sentence of the percentage of words that are unique in the book (hint: use :.1f in your format)
+For this lab:
+
+Create a main section at the bottom of the code
+Update the code to have a function that reads in the file and returns contents as a list
+Update the code to have a function that converts the list of book lines into a list of the words
+Update the main section to call the function that reads the file and the function that converts the book lines into a list.  Remember to pass the appropriate variable into the function and return the value you want and store it in a variable
+Update the main section to create a word set and print the sentence about unique words
+Update the code to have a function that calculates the word count by taking in the word list and return the dictionary
+Update the main section to call the function that calculates the word count and find the word with the maximum count (hint: use max)
+Update the code to have a function that calculates the minum word frequency and gets the list of words from the word frequency dictionary
+Update the main section to call the minimum word function and print the results
+Post your solution to the discussion board.
 '''
+'''
+def reader(text_name, file_name)
+with open("./test_name") as file_name:
+    with open("./land_time_forgot.txt") as file:
+    lines = file.readlines()
 
-# from Mod5_Lab2
+    word_list = []
+    for line in lines:
+    word_list.extend(line.split(" "))
+
+    word_set = set(word_list)
+    print("There are {} words in the book and {} of them are unique".format(
+        len(word_list), len(word_set)))
+
+    word_freq = {}
+    for word in word_list:
+        if word in word_freq:
+            word_freq[word] = word_freq[word] + 1
+        else:
+            word_freq[word] = 1
+
+    max_word = max(word_freq, key=word_freq.get)
+
+    print("Most frequent word is '{}' at {} with frequency {}".format(
+        max_word, word_counts[max_word], word_freq[max_word]))
+
+    min_word_freq = min(word_freq.values())
+    min_words = []
+    for word, fr in word_freq.items():
+        if fr == min_word_freq:
+            min_words.append(word)
+
+    print("The lowest word_frequency is {} and there are {} words in the book with that word_frequency".format(min_word_freq, len(min_words)))lines = file.readlines()
+
+    word_list = []
+    for line in lines:
+    word_list.extend(line.split(" "))
+
+    word_set = set(word_list)
+    print("There are {} words in the book and {} of them are unique".format(
+        len(word_list), len(word_set)))
+
+    word_freq = {}
+    for word in word_list:
+        if word in word_freq:
+            word_freq[word] = word_freq[word] + 1
+        else:
+            word_freq[word] = 1
+
+    max_word = max(word_freq, key=word_freq.get)
+
+    print("Most frequent word is '{}' at {} with frequency {}".format(
+        max_word, word_counts[max_word], word_freq[max_word]))
+
+    min_word_freq = min(word_freq.values())
+    min_words = []
+    for word, fr in word_freq.items():
+        if fr == min_word_freq:
+            min_words.append(word)
+
+    print("The lowest word_frequency is {} and there are {} words in the book with that word_frequency".format(min_word_freq, len(min_words)))
+'''
+------------------
+if __name__ == "__main__":
+    pass
+'''
+my old hw5.py
 # import a sort operator
 import operator
 # sortedList =sorted(h.items(), key=operator.itemgetter(1,0) , reverse=True)
@@ -123,3 +190,8 @@ print("The percentage of words that are unique in this text is {:.1f}% \n".forma
 
 
 
+
+
+
+
+'''
