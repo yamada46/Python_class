@@ -20,7 +20,7 @@ with open("./test_name") as file_name:
     with open("./land_time_forgot.txt") as file:
     lines = file.readlines()
 
-    word_list = []
+def word_list = []
     for line in lines:
     word_list.extend(line.split(" "))
 
@@ -86,11 +86,13 @@ import operator
 # sortedList =sorted(h.items(), key=operator.itemgetter(1,0) , reverse=True)
 
 # open the file
-with open("./land_time_forgot.txt") as file:
-
-# read file into a list of lines
-    list_file = file.readlines()
-
+def read_text(file_name)
+    with open(file_name) as text:
+        list_file = text.readlines()
+    return(list_file)
+    
+    
+lines = list_file
 # get number of lines
 num_lines = len(list_file)
 
