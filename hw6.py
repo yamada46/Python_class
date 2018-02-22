@@ -18,30 +18,7 @@ Write functions to:
 Calculate how many pizzas to order based on number of people and average slices
 Total pizza cost
 Cost per person
-Stretch goals:
 
-Add an option to calculate the tip by person or by slice.
-Update your pizza script to read in a file (txt or csv) of how many slices of pizza different people want (ex: Daniel, 3) and calculate the cost for each person individually.
-How many slices are leftover?
-Example Output:
-
-
-You need 6 pizzas
-The total cost is $78.90
-
-Each person owed $5.26
-
-'''
-# Get the input for people's names and number of pizza slices they'd like to eat
-name_list = ["Sheree", "Melissa", "Zack", "Karen", "JoAnn", "Elisha", "Lisa", "Gail"]
-
-people_slices = [2, 3, 4, 3, 3, 2, 2, 2]
-
-# Put the unchanging variables in a tuple
-pizza_tuple = (10.00, 8, 9.6, 15, 3.99)
-
-'''
-Good practice to give notes to functions
 '''
 '''
 total_slices function sums up all of the slices of pizza people want
@@ -54,8 +31,8 @@ def total_slices():
 num_pizza function determines how many pizzas need to be ordered 
 '''
 def num_pizza(num_slices):
-    num = num_slices/pizza_tuple[1]
-    if num_slices % pizza_tuple[1] == 0:
+    num = num_slices/slices_per_pizza
+    if num_slices % slices_per_pizza == 0:
         return num
     else:
         return int(num) + 1
@@ -63,8 +40,8 @@ def num_pizza(num_slices):
 '''
 pizzas_price function multiplies number of pizzas * per pizza price ($10)
 '''
-def pizzas_price(num_pizzas, per_pizza_price):
-    price = num_pizzas * per_pizza_price
+def pizzas_price(pizzas_needed, cost_per_pizza):
+    price = pizzas_needed * cost_per_pizza
     return price
 
 '''
@@ -89,21 +66,34 @@ def avg_slices(num_slices, num_people):
     return avg
 
 '''
-total_tax_tip function determines the total bill including delivery charge
+total_tax_tip_fee function determines the total bill including delivery charge
 '''
-def total_tax_tip(total_price, tax, tip, delivery_fee ):
-    totals = float(total_price + tax + tip + delivery_fee)
+def total_tax_tip_fee(pizzas_cost, sales_tax_pizzas, tip_amt, delivery_cost):
+    totals = float(pizzas_cost + sales_tax_pizzas + tip_amt + delivery_cost)
     return totals
+'''
+cost per person is the cost of pizzas with tax, tip, delivery fee divided by number of people
+'''
+def cost_per_person(grand_total, num_people):
+    cost_each = grand_total/num_people
+    return cost_each
 
 # Get the input for people's names and number of pizza slices they'd like to eat
-print("Who wants pizza? The large pizza has 8 slices. \n")
+print("Who wants pizza? The large pizza has 8 slices. And there are 8 of us. \n")
 
 people_slices = []
 name_list = ["Sheree", "Melissa", "Zack", "Karen", "JoAnn", "Elisha", "Lisa", "Gail"]
 for name in name_list:
-    slices = input("How many slices do you want? ")
+    slices = input("{}, how many slices do you want? ".format(name))
     people_slices.append(int(slices))
-print(people_slices)
+#print(people_slices)
+
+# enter cost per pizza, slices per pizza, 9.6% sales tax, 15% tip, delivery fee
+cost_per_pizza = float(10.00)
+slices_per_pizza = int(8)
+percent_tax = float(9.6)
+percent_tip = float(15)
+delivery_cost = float(3.99)
 
 # Find out the average slices per person
 num_slices = sum(people_slices)
@@ -111,7 +101,36 @@ num_people = len(people_slices)
 
 avg = avg_slices(num_slices, num_people)
 
-print("The average number of slices per person is {}.\n".format(avg))
+# find out the number of slices of pizza needed for everyone
+num_slices = sum(people_slices)
+
+# find out the number of pizzas needed
+pizzas_needed = num_pizza(num_slices)
+
+
+# find out the total cost for just the pizzas
+pizzas_cost = pizzas_price(pizzas_needed, cost_per_pizza)
+#print(pizzas_cost)
+
+# find out the sales tax for the pizzas
+sales_tax_pizzas = sales_tax(pizzas_cost, percent_tax)
+print(sales_tax_pizzas)
+total_price = float(pizzas_cost + sales_tax_pizzas)
+#print(total_price)
+
+# find out the tip for the pizzas total cost with tax
+tip_amt = tip_amount(total_price, percent_tip)
+
+# find out the total cost for the pizzas with tax, and delivery fee
+grand_total = total_tax_tip_fee(pizzas_cost, sales_tax_pizzas, tip_amt, delivery_cost)
+
+# find out the cost per person
+each_cost_8_people = cost_per_person(grand_total, num_people)
+
+# print out the total slices, how many pizzas, grand_total, average number of slices per person
+print("The total number of slices is {} for everyone, which is at least {} pizzas.\n ".format(num_slices, pizzas_needed))
+print("The grand total including tax, tip, delivery fee is ${:.2f} ".format(grand_total))
+print("The {:.1f} is the average number of slices per person. So the cost per person is ${:.2f} \n".format(avg, each_cost_8_people))
 
 
 
