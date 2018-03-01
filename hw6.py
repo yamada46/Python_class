@@ -78,8 +78,13 @@ def cost_per_person(grand_total, num_people):
     cost_each = grand_total/num_people
     return cost_each
 
+# run this as a stand alone script
+#if __name__=='__main__':  if this is used all the inputs below has to be indented
+# did not use the above
+
+
 # Get the input for people's names and number of pizza slices they'd like to eat
-print("Who wants pizza? The large pizza has 8 slices. And there are 8 of us. \n")
+print("\nWho wants pizza? The large pizza has 8 slices. And there are 8 of us. \n")
 
 people_slices = []
 name_list = ["Sheree", "Melissa", "Zack", "Karen", "JoAnn", "Elisha", "Lisa", "Gail"]
@@ -107,14 +112,15 @@ num_slices = sum(people_slices)
 # find out the number of pizzas needed
 pizzas_needed = num_pizza(num_slices)
 
-
 # find out the total cost for just the pizzas
 pizzas_cost = pizzas_price(pizzas_needed, cost_per_pizza)
 #print(pizzas_cost)
 
 # find out the sales tax for the pizzas
 sales_tax_pizzas = sales_tax(pizzas_cost, percent_tax)
-print(sales_tax_pizzas)
+#print(sales_tax_pizzas)
+
+# get the total price for the pizzas and sales tax
 total_price = float(pizzas_cost + sales_tax_pizzas)
 #print(total_price)
 
@@ -128,8 +134,8 @@ grand_total = total_tax_tip_fee(pizzas_cost, sales_tax_pizzas, tip_amt, delivery
 each_cost_8_people = cost_per_person(grand_total, num_people)
 
 # print out the total slices, how many pizzas, grand_total, average number of slices per person
-print("The total number of slices is {} for everyone, which is at least {} pizzas.\n ".format(num_slices, pizzas_needed))
-print("The grand total including tax, tip, delivery fee is ${:.2f} ".format(grand_total))
+print("\nThe total number of slices is {} for everyone, which is at least {} pizzas.\n ".format(num_slices, pizzas_needed))
+print("The grand total including 9.6% sales tax, 15% tip, and delivery fee of $3.99, is ${:.2f} ".format(grand_total))
 print("The {:.1f} is the average number of slices per person. So the cost per person is ${:.2f} \n".format(avg, each_cost_8_people))
 
 
