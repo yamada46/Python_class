@@ -19,27 +19,11 @@ Upload your script and output file to canvas for full credit
 # import requests (a library) and bs4 (BeautifulSoup4)
 import requests
 import bs4
-
+'''
 # make a function to define main - don't really understand - does stuff at command line
 def main():
-# get an input for a url as a string and print it out
-    url = input("Enter a URL you would like to scrape data from: \n")
-    print("The URL you have chosen is: {}.".format(url))
-
-# get an input for a tag to find
-    tag = input("What tag would you like to search for? \n")
-
-    print("The tag you have entered is: {}\n".format(tag))
-
-# find the tags
-    tags = find_tags(url, tag)
-
-# convert to text
-    tags_list = tag_text(tags)
-#    print(tags_list)
-
-# write to tag.txt
-    write_text(tags_list)
+    print("I don't understand this main stuff \n")
+'''
 
 def find_tags(url, tag):
     response = requests.get(url)
@@ -63,10 +47,6 @@ def write_text(tags_list):
     for tag in tags_list:
         file.write(tag + '\n')
 
-if __name__=="__main__":
-    main()
-
-'''
 # get an input for a url as a string and print it out
 url = input("Enter a URL you would like to scrape data from: \n")
 print("The URL you have chosen is: {}.".format(url))
@@ -81,8 +61,12 @@ tags = find_tags(url, tag)
 
 # convert to text
 tags_list = tag_text(tags)
-print(tags_list)
+#print(tags_list)
 
 # write to tag.txt
 write_text(tags_list)
+'''
+# script worked before I put this in
+if __name__=="__main__":
+    main()
 '''

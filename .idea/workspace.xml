@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0918421b-b24e-4865-8504-a045632eae4d" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Mod7_Lab2.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/hw7.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Lab2.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Mod8_Lab.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/hw8.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/hw6.py" afterPath="$PROJECT_DIR$/hw6.py" />
+      <change beforePath="$PROJECT_DIR$/hw7.py" afterPath="$PROJECT_DIR$/hw7.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -60,16 +61,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Mod6_Lab2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Mod6_Lab2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1170">
-              <caret line="78" column="9" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="hw6.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hw6.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -92,14 +83,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hw7.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hw7.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hw7.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="88" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="88" />
+            <state relative-caret-position="29">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding>
-                <element signature="e#738#753#0" expanded="true" />
+                <element signature="e#891#906#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Mod8_Lab.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Mod8_Lab.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Lab2.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lab2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hw8.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hw8.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="16" lean-forward="false" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -144,6 +165,9 @@
         <option value="$PROJECT_DIR$/hw6.py" />
         <option value="$PROJECT_DIR$/Mod7_Lab2.py" />
         <option value="$PROJECT_DIR$/hw7.py" />
+        <option value="$PROJECT_DIR$/Mod8_Lab.py" />
+        <option value="$PROJECT_DIR$/Lab2.py" />
+        <option value="$PROJECT_DIR$/hw8.py" />
       </list>
     </option>
   </component>
@@ -501,7 +525,21 @@
       <option name="project" value="LOCAL" />
       <updated>1519263896258</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="hw7.py - before adding main">
+      <created>1519875752932</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1519875752932</updated>
+    </task>
+    <task id="LOCAL-00033" summary="hw7.py - with main added">
+      <created>1519876284427</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1519876284427</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TodoView">
@@ -546,7 +584,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="hw1a-print sentence worked" />
     <MESSAGE value="hw1a-yay the script pretty much did what i want!" />
     <MESSAGE value="hw1a-yay the script did what i want except spaces in last sentence" />
     <MESSAGE value="hw1a-yay done!" />
@@ -570,7 +607,9 @@
     <MESSAGE value="hw6.py - in progress" />
     <MESSAGE value="hw6.py - functions done" />
     <MESSAGE value="hw6.py - all done" />
-    <option name="LAST_COMMIT_MESSAGE" value="hw6.py - all done" />
+    <MESSAGE value="hw7.py - before adding main" />
+    <MESSAGE value="hw7.py - with main added" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw7.py - with main added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -808,11 +847,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hw7.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="88" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="88" />
+        <state relative-caret-position="29">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
-            <element signature="e#738#753#0" expanded="true" />
+            <element signature="e#891#906#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mod8_Lab.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw8.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="16" lean-forward="false" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
