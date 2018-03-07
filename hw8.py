@@ -15,38 +15,51 @@ account
 '''
 #!/usr/bin/env python3
 
-class Bank():
-    Bank.account = 0
-    def __init__(self, account):
-        self.account = account
+class Bank_account():
 
-    def balance(self, balance):
+    def __init__(self, name, balance = 0):
+
+        self.name = name
         self.balance = float(balance)
 
-    def deposit(self, deposit):
-        self.deposit = float(deposit)
+    def adds_deposit(self, deposit):
+        self.balance = float(deposit) + self.balance
+        return self.balance
 
-    def withdraw(self, withdrawal):
-        self.withdrawal = float(withdrawal)
+    def subtracts_withdrawals(self, withdrawal):
+        self.balance = (self.balance - withdrawal)
+        if self.balance > 0:
+            return self.balance
+        else:
+            print("You can not withdraw ${:.2f}, you will be ${} overdrawn in your account, which would incur a penalty fee. \n".format(withdrawal, self.balance))
+            return (self.balance + withdrawal)
 
-    def add(self, balance, deposit):
-        adds = (self.balance + self.deposit)
-        return float(adds)
-
-#    def subtract(self, balance, withdrawal):
-#       float(subtracts) = (self.balance - self.withdrawal)
-#       if balance less than 0:
-#           return subtracts
-#       else:
-#           input("You can not withdraw ${} amount, you only have ${} in your account. Try another withdrawal amount: $\n")
-
-acct1 = Bank_account(Bob)
-
-acct1.balance = 246.35
-
-acct1.deposit = 250.00
+        # else:
+        #     # count = 0
+        #     for count < 4:
+        #         print("You can not withdraw ${:.2f}, you will be ${} overdrawn in your account, which would incur a penalty fee. \n".format(withdrawal, self.balance))
+        #         withdrawal2 = input("Try another withdrawal amount: $\n")
+        #     else:
+        #         print("You have exceeded the number of withdrawal inputs. \n ")
+        #         count = count + 1
+        #         return error_message
 
 
+#error checking for balance < 0
+# assign a name to Banking
+acct1 = Bank_account("Helen")
+print(acct1.balance, "is your current account balance. \n")
+
+acct1_deposit = acct1.adds_deposit(250.00)
+print("${:.2f} is the amount of your deposit. \n".format(acct1_deposit))
+print("$", acct1.balance, "is your new account balance. \n")
+
+acct1.subtracts_withdrawals(200.00)
+
+print(acct1.balance, "is your new account balance. \n")
+
+acct2 = Bank_account("Lynne", balance = 350.0)
+acct2.balance
 
 
 
