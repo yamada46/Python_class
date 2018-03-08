@@ -1,5 +1,4 @@
 '''
-
 Create a Banking class that does the following:
 Tracks an initial account balance
 Tracks deposits in the account
@@ -27,42 +26,41 @@ class Bank_account():
         return self.balance
 
     def subtracts_withdrawals(self, withdrawal):
-        self.balance = (self.balance - withdrawal)
+        self.balance = self.balance - float(withdrawal)
         if self.balance > 0:
             return self.balance
         else:
-            print("You can not withdraw ${:.2f}, you will be ${} overdrawn in your account, which would incur a penalty fee. \n".format(withdrawal, self.balance))
-            return (self.balance + withdrawal)
-
-        # else:
-        #     # count = 0
-        #     for count < 4:
-        #         print("You can not withdraw ${:.2f}, you will be ${} overdrawn in your account, which would incur a penalty fee. \n".format(withdrawal, self.balance))
-        #         withdrawal2 = input("Try another withdrawal amount: $\n")
-        #     else:
-        #         print("You have exceeded the number of withdrawal inputs. \n ")
-        #         count = count + 1
-        #         return error_message
+            self.balance = (self.balance + withdrawal)
+            print("You can not withdraw ${:.2f}, you have insufficient funds, with your current balance of ${:.2f}. \n".format(withdrawal, self.balance))
+            # return (self.balance)
 
 
 #error checking for balance < 0
 # assign a name to Banking
+#name = input("What is the name of your account?\n")
+#acct1 = Bank_account(name)
+
 acct1 = Bank_account("Helen")
-print(acct1.balance, "is your current account balance. \n")
+print("Your account name is {}, and your balance is {:.2f}. \n".format(acct1.name, acct1.balance))
 
+# Track deposits
 acct1_deposit = acct1.adds_deposit(250.00)
-print("${:.2f} is the amount of your deposit. \n".format(acct1_deposit))
-print("$", acct1.balance, "is your new account balance. \n")
+print("The amount of your deposit is ${:.2f} and your new balance is {:.2f} \n".format(acct1_deposit, acct1.balance))
 
-acct1.subtracts_withdrawals(200.00)
+# Print balance
+# print("$", acct1.balance, "is your account balance. \n")
 
-print(acct1.balance, "is your new account balance. \n")
+# Track withdrawals
+acct1_withdrawal = acct1.subtracts_withdrawals(200.00)
+print("The amount of your withdrawal ia ${:.2f} and your new balance is ${:.2f} \n".format(acct1_withdrawal, acct1.balance))
 
-acct2 = Bank_account("Lynne", balance = 350.0)
-acct2.balance
+# Print balance
+# print(acct1.balance, "is your account balance. \n")
 
+# Another withdrawal that is greater than balance
+acct1.subtracts_withdrawals(60.00)
 
-
-
+# Print balance
+print(acct1.balance, "is your account balance. \n")
 
 
