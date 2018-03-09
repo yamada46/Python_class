@@ -31,7 +31,7 @@ class Bank_account():
             return self.balance
         else:
             self.balance = (self.balance + withdrawal)
-            print("You can not withdraw ${:.2f}, you have insufficient funds, with your current balance of ${:.2f}. \n".format(withdrawal, self.balance))
+            print("You can not withdraw ${:,.2f}, you have insufficient funds, with your current balance of ${:.2f}. \n".format(withdrawal, self.balance))
             # return (self.balance)
 
 
